@@ -49,7 +49,7 @@ public class Fabricante {
 	}
 	
 	public static Fabricante fabricaMayorVentas() {
-		Fabricante a = new Fabricante("cba", new Pais("abc"));
+		Fabricante a = contF.get(0);
 		for(int i = 0; i < size; i++) {
 			Fabricante b = contF.get(i);
 			if(b.getMayor() > a.getMayor()) {

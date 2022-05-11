@@ -29,9 +29,8 @@ public class Pais {
 	}
 	
 	public static Pais paisMasVendedor() {
-		
+		Pais a = contP.get(0);
 		for(int i = 0; i < contP.size(); i++) {
-			Pais a = contP.get(i);
 			Pais b = contP.get(i);
 			if(b.getMayor() > a.getMayor()) {
 				a = b;
